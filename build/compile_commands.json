@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/artem/array_list/build",
+  "command": "/usr/bin/c++  -I/home/artem/array_list/include  -o CMakeFiles/stack.dir/src/stack.cpp.o -c /home/artem/array_list/src/stack.cpp",
+  "file": "/home/artem/array_list/src/stack.cpp",
+  "output": "CMakeFiles/stack.dir/src/stack.cpp.o"
+},
+{
+  "directory": "/home/artem/array_list/build",
+  "command": "/usr/bin/c++  -I/home/artem/array_list/include  -o CMakeFiles/postfixc.dir/src/main.cpp.o -c /home/artem/array_list/src/main.cpp",
+  "file": "/home/artem/array_list/src/main.cpp",
+  "output": "CMakeFiles/postfixc.dir/src/main.cpp.o"
+}
+]

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/artem/array_list/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
