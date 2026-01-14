@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/artem/array_list/build/cmake_install.cmake"
+		"/home/artem/postfixc/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

@@ -1,14 +1,14 @@
 [
 {
-  "directory": "/home/artem/array_list/build",
-  "command": "/usr/bin/c++  -I/home/artem/array_list/include  -o CMakeFiles/stack.dir/src/stack.cpp.o -c /home/artem/array_list/src/stack.cpp",
-  "file": "/home/artem/array_list/src/stack.cpp",
+  "directory": "/home/artem/postfixc/build",
+  "command": "/usr/bin/c++  -I/home/artem/postfixc/include  -o CMakeFiles/stack.dir/src/stack.cpp.o -c /home/artem/postfixc/src/stack.cpp",
+  "file": "/home/artem/postfixc/src/stack.cpp",
   "output": "CMakeFiles/stack.dir/src/stack.cpp.o"
 },
 {
-  "directory": "/home/artem/array_list/build",
-  "command": "/usr/bin/c++  -I/home/artem/array_list/include  -o CMakeFiles/postfixc.dir/src/main.cpp.o -c /home/artem/array_list/src/main.cpp",
-  "file": "/home/artem/array_list/src/main.cpp",
+  "directory": "/home/artem/postfixc/build",
+  "command": "/usr/bin/c++  -I/home/artem/postfixc/include  -o CMakeFiles/postfixc.dir/src/main.cpp.o -c /home/artem/postfixc/src/main.cpp",
+  "file": "/home/artem/postfixc/src/main.cpp",
   "output": "CMakeFiles/postfixc.dir/src/main.cpp.o"
 }
 ]

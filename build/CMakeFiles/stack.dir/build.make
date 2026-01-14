@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/artem/array_list
+CMAKE_SOURCE_DIR = /home/artem/postfixc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/artem/array_list/build
+CMAKE_BINARY_DIR = /home/artem/postfixc/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/stack.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/stack.dir/codegen:
 .PHONY : CMakeFiles/stack.dir/codegen
 
 CMakeFiles/stack.dir/src/stack.cpp.o: CMakeFiles/stack.dir/flags.make
-CMakeFiles/stack.dir/src/stack.cpp.o: /home/artem/array_list/src/stack.cpp
+CMakeFiles/stack.dir/src/stack.cpp.o: /home/artem/postfixc/src/stack.cpp
 CMakeFiles/stack.dir/src/stack.cpp.o: CMakeFiles/stack.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artem/array_list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/stack.dir/src/stack.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/stack.dir/src/stack.cpp.o -MF CMakeFiles/stack.dir/src/stack.cpp.o.d -o CMakeFiles/stack.dir/src/stack.cpp.o -c /home/artem/array_list/src/stack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artem/postfixc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/stack.dir/src/stack.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/stack.dir/src/stack.cpp.o -MF CMakeFiles/stack.dir/src/stack.cpp.o.d -o CMakeFiles/stack.dir/src/stack.cpp.o -c /home/artem/postfixc/src/stack.cpp
 
 CMakeFiles/stack.dir/src/stack.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/stack.dir/src/stack.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artem/array_list/src/stack.cpp > CMakeFiles/stack.dir/src/stack.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artem/postfixc/src/stack.cpp > CMakeFiles/stack.dir/src/stack.cpp.i
 
 CMakeFiles/stack.dir/src/stack.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/stack.dir/src/stack.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artem/array_list/src/stack.cpp -o CMakeFiles/stack.dir/src/stack.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artem/postfixc/src/stack.cpp -o CMakeFiles/stack.dir/src/stack.cpp.s
 
 # Object files for target stack
 stack_OBJECTS = \
@@ -96,7 +96,7 @@ stack_EXTERNAL_OBJECTS =
 libstack.a: CMakeFiles/stack.dir/src/stack.cpp.o
 libstack.a: CMakeFiles/stack.dir/build.make
 libstack.a: CMakeFiles/stack.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/artem/array_list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libstack.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/artem/postfixc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libstack.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/stack.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stack.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/stack.dir/clean:
 .PHONY : CMakeFiles/stack.dir/clean
 
 CMakeFiles/stack.dir/depend:
-	cd /home/artem/array_list/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/artem/array_list /home/artem/array_list /home/artem/array_list/build /home/artem/array_list/build /home/artem/array_list/build/CMakeFiles/stack.dir/DependInfo.cmake "--color=$(COLOR)" stack
+	cd /home/artem/postfixc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/artem/postfixc /home/artem/postfixc /home/artem/postfixc/build /home/artem/postfixc/build /home/artem/postfixc/build/CMakeFiles/stack.dir/DependInfo.cmake "--color=$(COLOR)" stack
 .PHONY : CMakeFiles/stack.dir/depend
 

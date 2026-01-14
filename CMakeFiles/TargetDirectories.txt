@@ -1,4 +1,4 @@
-/home/artem/array_list/CMakeFiles/postfixc.dir
-/home/artem/array_list/CMakeFiles/stack.dir
-/home/artem/array_list/CMakeFiles/edit_cache.dir
-/home/artem/array_list/CMakeFiles/rebuild_cache.dir
+/home/artem/postfixc/CMakeFiles/postfixc.dir
+/home/artem/postfixc/CMakeFiles/stack.dir
+/home/artem/postfixc/CMakeFiles/edit_cache.dir
+/home/artem/postfixc/CMakeFiles/rebuild_cache.dir

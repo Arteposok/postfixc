@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/artem/array_list/include
+CXX_INCLUDES = -I/home/artem/postfixc/include
 
 CXX_FLAGS = 
 
