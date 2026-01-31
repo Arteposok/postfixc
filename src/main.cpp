@@ -143,7 +143,7 @@ int main(){
     std::cout << "type :help to recieve help" << "\n";
     while (true){
         std::string input;
-        std::cout << "\x1b[32m" << "calculator $ " << "\x1b[0m";
+        std::cout << "\x1b[32m" << "evaluate # " << "\x1b[0m";
         std::getline(std::cin, input);
         Stack* commands = command(input);
         if (commands->len()>0){
