@@ -151,6 +151,7 @@ int main(){
             std::cout << commands_result << "\n";
             continue;
         }
+        input = preprocessor(input);
         float result = parse_and_evaluate(input);
         a = result;
         std::cout << "\x1b[31m" << ">>>  " << std::to_string(result) << "\x1b[0m" << "\n";
