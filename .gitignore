@@ -1,0 +1,4 @@
+postfixc
+build/
+CMakeFiles/
+libstach.a
