@@ -2,3 +2,4 @@ postfixc
 build/
 CMakeFiles/
 libstach.a
+.cache/
