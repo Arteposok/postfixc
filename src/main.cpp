@@ -4,9 +4,8 @@
 #include "stack.h"
 
 float a = 0;
-float parse_and_evaluate(std::string input){
+Stack* parse_and_evaluate(std::string input){
     Stack* master = new Stack();
-    Stack* numbers = new Stack();
     std::string current_number = "";
     for (int pos=input.length()-1; pos>=0;pos--){
         char cur = input.at(pos);
@@ -36,6 +35,11 @@ float parse_and_evaluate(std::string input){
         std::string* token = new std::string(current_number);
         master->add(token);
     }
+    return master;
+    
+}
+float evaluate(Stack* master){
+    Stack* numbers = new Stack();
     while (master->len()>0){
         std::string* token = (std::string*) master->pop();
         if (*token == "*" || *token == "/" || *token == "+" || *token == "-" || *token == "^"){
@@ -74,7 +78,6 @@ float parse_and_evaluate(std::string input){
     delete master;
     delete numbers;
     return output_float;
-
 }
 std::string preprocessor(std::string input){
     std::size_t index = 0;
@@ -110,6 +113,17 @@ std::string process_command(std::string* command_string, Stack* body){
     std::string result = "";
     if (*command_string == ":help"){
         result = "\t1. Use the postfix notation, like <a> <b> <operator>. e.g. 5 5 * 10 - will be equivalent to 5*5 - 10, the operations always execute with the two numbers to the left if awailable.\n\t2. type :help to see this message\n use * / + - ^ for multiplication, division, addition, subtraction and power.\n\t3. type 'a' in your expression to eccess your previous output";
+    }
+    if (*command_string == ":run"){
+        std::string* N = (std::string*)body->pop();
+        int n = std::stoi(*N);
+        delete N;
+        Stack* copy = new Stack();
+        Stack* main = new Stack();
+        for (int i = n; i > 0; i --){
+            float eval_result = evaluate(body);
+            
+        }
     }
     command_string->clear();
     while (body->len()>0){
@@ -152,7 +166,8 @@ int main(){
             continue;
         }
         input = preprocessor(input);
-        float result = parse_and_evaluate(input);
+        Stack* master = parse_and_evaluate(input);
+        float result = evaluate(master);
         a = result;
         std::cout << "\x1b[31m" << ">>>  " << std::to_string(result) << "\x1b[0m" << "\n";
     }
